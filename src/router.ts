@@ -1,9 +1,9 @@
 import { Router } from 'express'
 
-import HelloWorld from '../src/controllers/helloWorld'
+import HelloWorldController from './controllers/HelloWorldController'
 
 const routes = Router()
 
-routes.get('/', HelloWorld.handle)
+routes.get('/', HelloWorldController.handle)
 
 export { routes }
